@@ -4,7 +4,7 @@
 // meanmenu
 $('#mobile-menu').meanmenu({
 	meanMenuContainer: '.mobile-menu',
-	meanScreenWidth: "992"
+	meanScreenWidth: "991"
 });
 
 // One Page Nav
@@ -25,7 +25,7 @@ $(window).on('scroll', function () {
 });
 
 var typed = new Typed(".type",{
-	strings:['Web Developer', 'Codding Expert', 'Freelancer', 'IT Consultent'],
+	strings:['Web Developer', 'Coding Expert', 'Freelancer', 'IT Consultent'],
 	typeSpeed: 60,
 	backSpeed: 60,
 	loop:true

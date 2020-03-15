@@ -204,6 +204,8 @@ label {
 	transition: all 0.3s ease 0s;
 	vertical-align: middle;
 	white-space: nowrap;
+	content: '\f077';
+	font-family: "Font Awesome %";
 }
 .breadcrumb > .active {
 	color: #888;
@@ -279,6 +281,13 @@ header{
 .menu-area ul li a:hover{
 	color: #768052;
 }
+.mean-nav ul li a{
+	font-family: 'Crimson Text', serif;
+	font-weight: 600;
+}
+.mean-nav ul li a:hover{
+	color: red;
+}
 
 /* slider-area */
 
@@ -301,6 +310,7 @@ header{
 	font-weight: 700;
 	font-size: 40px;
 	margin-bottom: 60px;
+	line-height: 1;
 	color: #ffffff;
 }
 .slider-area h4 {
@@ -315,8 +325,6 @@ header{
     color: #ffffff;
 }
 .slider-area h1 span.type{
-    font-weight: 700;
-    font-size: 50px;
     color: red;
 }
 .slider-area h3 {
