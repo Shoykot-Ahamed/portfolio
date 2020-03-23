@@ -350,6 +350,19 @@ header {
     width: 100%;
     margin-top: -17px;
 }
+.mean-container .mean-nav ul li a {
+	color: red;
+	font-weight: 600;
+}
+.mean-container a.meanmenu-reveal {
+    border: 1px solid blue;
+}
+.mean-container a.meanmenu-reveal span {
+    background: blue;
+}
+a.meanmenu-reveal.meanclose {
+    color: blue;
+}
 
 /* slider-area */
 
