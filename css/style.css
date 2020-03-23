@@ -23,9 +23,9 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Dancing+Script:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Kaushan+Script|Open+Sans+Condensed:300,300i,700&display=swap');
  body {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Crimson Text', serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -125,6 +125,7 @@ li {
 p {
 	font-size: 14px;
 	font-weight: normal;
+	font-family: 'Kaushan Script', cursive;
 	line-height: 24px;
 	color: #7e7e7e;
 	margin-bottom: 15px;
@@ -255,35 +256,99 @@ label {
 
 /* header-area */
 
-header{
-	background: #ddd;
-	padding: 10px 0;
+header {
+    background: #000;
 }
-.logo-area img {
-    height: 65px;
+
+.logo-area{
+	background: #000000;
+	position: relative;
 }
+.logo-area::before{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: blue;
+	mix-blend-mode: color;
+	pointer-events: none;
+}
+.logo-area video{
+	object-fit: cover;
+	width: 100%;
+}
+.logo-area h1{
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	color: blue;
+	font-size: 20px;
+	font-family: serif;
+	font-weight: 700;
+	letter-spacing: .2em;
+}
+.logo-area h1 span{
+	opacity: 0;
+	display: inline-block;
+	animation: logo 1s linear forwards;
+}
+@keyframes logo{
+	0%{
+		opacity: 0;
+		transform: rotateY(90deg);
+		filter: blur(10px);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateY(0deg);
+		filter: blur(0);
+	}
+}
+.logo-area h1 span:nth-child(1){
+	animation-delay: 1.3s;
+}
+.logo-area h1 span:nth-child(2){
+	animation-delay: 1.8s;
+}
+.logo-area h1 span:nth-child(3){
+	animation-delay: 2.4s;
+}
+.logo-area h1 span:nth-child(4){
+	animation-delay: 2.8s;
+}
+.logo-area h1 span:nth-child(5){
+	animation-delay: 3.3s;
+}
+.logo-area h1 span:nth-child(6){
+	animation-delay: 3.8s;
+}
+
 .menu-area ul li {
     display: inline-block;
     margin-left: 35px;
-    padding: 20px 0;
+    padding: 62px 0;
     vertical-align: middle;
 }
-.menu-area ul li a{
-	text-transform: uppercase;
-	font-size: 14px;
-	color: #091f2a;
-	font-family: 'Crimson Text', serif;
-	font-weight: 600;
+.menu-area ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: red;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 .menu-area ul li a:hover{
-	color: #768052;
+	color: blue;
 }
-.mean-nav ul li a{
-	font-family: 'Crimson Text', serif;
-	font-weight: 600;
-}
-.mean-nav ul li a:hover{
-	color: red;
+.mobile-menu.mean-container {
+    width: 100%;
+    margin-top: -17px;
 }
 
 /* slider-area */
@@ -304,7 +369,6 @@ header{
 }
 .slider-area p{
 	text-transform: capitalize;
-	font-weight: 700;
 	font-size: 40px;
 	margin-bottom: 60px;
 	line-height: 1;

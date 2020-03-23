@@ -7,18 +7,14 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .menu-area ul li {
-        margin-left: 27px;
-    }
+
 
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-    .mean-container a.meanmenu-reveal {
-        margin-top: 12px;
-    }
+
 
 }
 
@@ -26,15 +22,6 @@
 /* small mobile :320px. */
 @media (max-width: 479px) {
 
-    .logo-area img {
-        height: 55px;
-    }
-    .mean-container a.meanmenu-reveal {
-        height: 22px;
-        line-height: 22px;
-        margin-top: -45px;
-        padding: 6px 7px;
-    }
     .slider-area p {
         font-size: 30px;
     }
@@ -65,39 +52,9 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {width:450px}
 
-    .mean-container a.meanmenu-reveal {
-        margin-top: -50px;
-    }
+
     .slider-area h1 {
         font-size: 40px;
     }
 
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Large Mobile :480px. */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .container {width:450px}
-
-    .mean-container a.meanmenu-reveal {
-        margin-top: 15px;
-    }
-
-}
-
-
