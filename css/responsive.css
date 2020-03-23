@@ -1,20 +1,30 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
+    .menu-area ul li {
+        padding: 62px 0;
+    }
 
 }
 
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .menu-area ul li {
+        padding: 50px 0;
+    }
 
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .logo-area h1 {
+        width: 90%;
+        letter-spacing: 1px;
+    }
+    .mobile-menu.mean-container {
+        margin-top: 56px;
+    }
 
 }
 
@@ -29,7 +39,8 @@
         width: 70%;
     }
     .mean-container a.meanmenu-reveal {
-        margin-top: -80px;
+        margin-top: -85px;
+        padding: 5px 6px;
     }
     .slider-area p {
         font-size: 30px;
@@ -61,9 +72,51 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {width:450px}
 
-
+    .logo-area video {
+        width: 60%;
+    }
+    .logo-area h1 {
+        width: 60%;
+    }
+    .mean-container a.meanmenu-reveal {
+        margin-top: -90px;
+        padding: 5px 6px;
+    }
     .slider-area h1 {
         font-size: 40px;
     }
 
+} 
+
+
+
+
+
+
+
+
+
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+    .logo-area h1 {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .logo-area h1 {
+        width: 100%;
+    }
+    .logo-area video {
+        width: 115%;
+    }
+    .mobile-menu.mean-container {
+        margin-top: 45px;
+    }
+    .mean-container a.meanmenu-reveal {
+        padding: 5px 6px;
+        margin-top: -31px;
+    }
+    
 } 

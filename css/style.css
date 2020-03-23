@@ -257,7 +257,8 @@ label {
 /* header-area */
 
 header {
-    background: #000;
+	background: #000;
+	border-bottom: 1px solid red;
 }
 
 .logo-area{
@@ -292,7 +293,7 @@ header {
 	font-size: 20px;
 	font-family: serif;
 	font-weight: 700;
-	letter-spacing: .2em;
+	letter-spacing: 4px;
 }
 .logo-area h1 span{
 	opacity: 0;
@@ -332,7 +333,7 @@ header {
 
 .menu-area ul li {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 28px;
     padding: 62px 0;
     vertical-align: middle;
 }
@@ -348,7 +349,6 @@ header {
 }
 .mobile-menu.mean-container {
     width: 100%;
-    margin-top: -17px;
 }
 .mean-container .mean-nav ul li a {
 	color: red;
