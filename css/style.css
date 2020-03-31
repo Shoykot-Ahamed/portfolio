@@ -238,19 +238,20 @@ label {
 
 /* scrollUp */
 #scrollUp {
-	background: #091f2a;
+	background: red;
 	height: 35px;
 	width: 35px;
 	right: 20px;
 	bottom: 20px;
-	color: #fff;
+	color: white;
 	font-size: 14px;
 	text-align: center;
 	border-radius: 50%;
 	line-height: 34px;
 }
 #scrollUp:hover {
-	background: #7DBA2F;
+	background: white;
+	color: red;
 }
 
 
@@ -272,7 +273,7 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-	background: blue;
+	background: red;
 	mix-blend-mode: color;
 	pointer-events: none;
 }
@@ -280,20 +281,20 @@ header {
 	object-fit: cover;
 	width: 100%;
 }
-.logo-area h1{
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-	text-align: center;
-	color: blue;
-	font-size: 20px;
-	font-family: serif;
-	font-weight: 700;
-	letter-spacing: 4px;
+.logo-area h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .logo-area h1 span{
 	opacity: 0;
@@ -333,9 +334,19 @@ header {
 
 .menu-area ul li {
     display: inline-block;
-    margin-left: 28px;
-    padding: 62px 0;
+    margin: 36px 0 36px 28px;
     vertical-align: middle;
+    position: relative;
+}
+.menu-area ul li:hover::after {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: red;
+	bottom: 0;
+	left: 0;
+	
 }
 .menu-area ul li a {
     text-transform: uppercase;
@@ -345,7 +356,7 @@ header {
     font-weight: 600;
 }
 .menu-area ul li a:hover{
-	color: blue;
+	color: #fff;
 }
 .mobile-menu.mean-container {
     width: 100%;
@@ -353,16 +364,19 @@ header {
 .mean-container .mean-nav ul li a {
 	color: red;
 	font-weight: 600;
+	border-top: none;
+	border-bottom: 1px solid #fff;
 }
 .mean-container a.meanmenu-reveal {
-    border: 1px solid blue;
+    border: 1px solid red;
 }
 .mean-container a.meanmenu-reveal span {
-    background: blue;
+    background: red;
 }
 a.meanmenu-reveal.meanclose {
-    color: blue;
+    color: red;
 }
+
 
 /* slider-area */
 
