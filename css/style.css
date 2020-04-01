@@ -336,26 +336,31 @@ header {
     display: inline-block;
     margin: 36px 0 36px 28px;
     vertical-align: middle;
-    position: relative;
+	position: relative;
+	cursor: pointer;
 }
-.menu-area ul li:hover::after {
+.menu-area ul li::after {
 	position: absolute;
 	content: '';
-	height: 2px;
-	width: 100%;
 	background: red;
+	height: 2px;
+	width: 0%;
 	bottom: 0;
 	left: 0;
-	
+	transition: .5s;
+}
+.menu-area ul li:hover::after {
+	width: 100%;
 }
 .menu-area ul li a {
     text-transform: uppercase;
     font-size: 14px;
     color: red;
     font-family: 'Crimson Text', serif;
-    font-weight: 600;
+	font-weight: 600;
+	padding: 0;
 }
-.menu-area ul li a:hover{
+.menu-area ul li:hover a{
 	color: #fff;
 }
 .mobile-menu.mean-container {
@@ -391,7 +396,7 @@ a.meanmenu-reveal.meanclose {
     width: 100%;
     content: "";
     background: #000000;
-    opacity: 75%;
+    opacity: 65%;
     z-index: -1;
 }
 .slider-area p{
@@ -422,19 +427,20 @@ a.meanmenu-reveal.meanclose {
     color: #ffffff;
 }
 
-.social a{
-	font-size: 30px;
-	height: 45px;
-	width: 45px;
-	line-height: 45px;
-	color: #ffffff;
-	background: royalblue;
-	border-radius: 50%;
-	margin: 10px;
-	margin-bottom: 50px;
+.social a {
+    font-size: 30px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 50px;
 }
 .social a:hover{
-	background: #0fb0ee;
+	background: white;
+	color: red;
 	transition: 1s;
 	opacity: 0.7s;
 }
@@ -448,18 +454,6 @@ a.meanmenu-reveal.meanclose {
 	margin: auto;
 	overflow: hidden;
 }
-.mouse::before{
-	position: absolute;
-	content: '';
-	height: 6px;
-	width: 6px;
-	border-radius: 50%;
-	background: #fff;
-	left: 50%;
-	top: 10px;
-	transform: translate(-50%,0);
-	animation: anim 1s linear infinite;
-}
 .mouse::after{
 	position: absolute;
 	content: '';
@@ -472,7 +466,19 @@ a.meanmenu-reveal.meanclose {
 	transform: translate(-50%,0);
 
 }
-@keyframes anim{
+.mouse::before{
+	position: absolute;
+	content: '';
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: #fff;
+	left: 50%;
+	top: 10px;
+	transform: translate(-50%,0);
+	animation: mouse 1s linear infinite;
+}
+@keyframes mouse{
 	0%{
 		transform: translate(-50%,0px);
 	}
@@ -488,3 +494,26 @@ a.meanmenu-reveal.meanclose {
 }
 
 
+/* section-title */
+
+.section-title h1 {
+	color: white;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.section-title h1 span {
+	color: red;
+}
+.section-title p {
+	color: white;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+
+/* about-area */
+.about-area {
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+}

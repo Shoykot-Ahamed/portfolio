@@ -25,7 +25,7 @@ $(window).on('scroll', function () {
 });
 
 var typed = new Typed(".type",{
-	strings:['Web Developer', 'Coding Expert', 'Freelancer', 'IT Consultent'],
+	strings:['Web Developer', 'Programmer', 'Coding Expert', 'Freelancer', 'IT Consultent'],
 	typeSpeed: 120,
 	backSpeed: 60,
 	loop:true
