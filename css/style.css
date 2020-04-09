@@ -254,14 +254,32 @@ label {
 	color: red;
 }
 
-
+html{
+	scroll-behavior: smooth;
+}
+.ofh{
+	overflow: hidden;
+}
+.background-image{
+	position: relative;
+}
+.background-image::after{
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #000000;
+    opacity: 65%;
+    z-index: -1;
+}
 /* header-area */
 
 header {
 	background: #000;
 	border-bottom: 1px solid red;
 }
-
 .logo-area{
 	background: #000000;
 	position: relative;
@@ -385,20 +403,6 @@ a.meanmenu-reveal.meanclose {
 
 /* slider-area */
 
-.slider-area{
-	position: relative;
-}
-.slider-area::after{
-	position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: #000000;
-    opacity: 65%;
-    z-index: -1;
-}
 .slider-area p{
 	text-transform: capitalize;
 	font-size: 40px;
@@ -512,8 +516,74 @@ a.meanmenu-reveal.meanclose {
 
 
 /* about-area */
-.about-area {
-	background: #232526;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+
+.about-content h3{
+	color: white;
+	padding-bottom: 20px;
+}
+.about-content p{
+	color: #ddd;
+	font-size: 18px;
+	text-align: justify;
+}
+.about-img img{
+	width: 100%;
+	height: 330px;
+}
+
+
+
+/* contact-area */
+
+.contact-area form label{
+	color: red;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+.contact-area form label span{
+	color: white;
+}
+.contact-area form input,.contact-area form textarea{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	border: 1px solid red;
+	color: red;
+	background: transparent;
+}
+.contact-area form input:focus,.contact-area form textarea:focus{
+	border: 1px solid red;
+}
+.contact-area form input{
+	height: 45px;
+}
+.contact-area form textarea{
+	height: 160px;
+}
+.contact-area form input[type=submit]{
+	width: auto;
+	padding: 10px 50px;
+	text-transform: uppercase;
+	background: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.contact-icon i{
+	color: red;
+	font-size: 40px;
+}
+.contact-details {
+	margin-left: 70px;
+}
+.contact-details h5 {
+	color: red;
+	text-transform: capitalize;
+}
+.contact-details ul li {
+	color: white;
+}
+.contact-details p {
+	color: white;
 }
