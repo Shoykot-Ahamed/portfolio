@@ -274,6 +274,11 @@ html{
     opacity: 65%;
     z-index: -1;
 }
+.jcc{
+	justify-content: center;
+}
+
+
 /* header-area */
 
 header {
@@ -533,6 +538,69 @@ a.meanmenu-reveal.meanclose {
 
 
 
+/* team-area */
+
+.team-area{
+	display: flex;
+}
+.team-area .sec{
+	margin-left: 70px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.team-area article{
+	background: white;
+	color: red;
+	height: 175px;
+	width: 200px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+.team-area article:nth-child(odd){
+	margin: 7em 0.1em 0;
+}
+.team-area .sec-2 article:nth-child(odd){
+	margin: 3em 0.1em 0;
+}
+.team-area .sec-2 article:nth-child(even){
+	margin: -4em 0.1em 0;
+}
+.team-area article figure{
+	margin: auto;
+}
+.team-area article figure h3{
+	text-transform: uppercase;
+	color: red;
+}
+.team-area article figure p{
+	color: black;
+	font-weight: 700;
+}
+.team-area .social-icon a{
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	margin: 0px 3px;
+	color: white;
+	background: red;
+}
+.team-area article img{
+	position: absolute;
+	height: 175px;
+	width: 200px;
+	transition: .7s;
+	transform-origin: 0% 50%;
+}
+.team-area article:hover img{
+	transform: translate(6%, -6%) rotate(-140deg);
+}
+
+
+
+
 /* contact-area */
 
 .contact-area form label{
@@ -548,7 +616,7 @@ a.meanmenu-reveal.meanclose {
 	margin-bottom: 15px;
 	padding: 10px 15px;
 	border: 1px solid red;
-	color: red;
+	color: white;
 	background: transparent;
 }
 .contact-area form input:focus,.contact-area form textarea:focus{
