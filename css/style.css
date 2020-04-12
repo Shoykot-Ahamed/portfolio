@@ -544,9 +544,9 @@ a.meanmenu-reveal.meanclose {
 	display: flex;
 }
 .team-area .sec{
-	margin-left: 70px;
-	flex-wrap: wrap;
-	justify-content: center;
+	margin: auto !important;
+	text-align: center !important;
+	justify-content: center !important;
 }
 .team-area article{
 	background: white;
@@ -597,7 +597,17 @@ a.meanmenu-reveal.meanclose {
 .team-area article:hover img{
 	transform: translate(6%, -6%) rotate(-140deg);
 }
+@media (min-width: 320px) and (max-width: 1500px) {
 
+    
+    .team-area .sec{
+		margin: auto;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    
+
+}
 
 
 
@@ -622,15 +632,15 @@ a.meanmenu-reveal.meanclose {
 .contact-area form input:focus,.contact-area form textarea:focus{
 	border: 1px solid red;
 }
-.contact-area form input{
-	height: 45px;
+.contact-area form input {
+    height: 40px;
 }
-.contact-area form textarea{
-	height: 160px;
+.contact-area form textarea {
+    height: 120px;
 }
 .contact-area form input[type=submit]{
 	width: auto;
-	padding: 10px 50px;
+	padding: 8px 50px;
 	text-transform: uppercase;
 	background: red;
 	color: white;
